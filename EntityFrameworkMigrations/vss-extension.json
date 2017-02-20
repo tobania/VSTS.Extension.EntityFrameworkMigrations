@@ -1,0 +1,61 @@
+{
+    "manifestVersion": 1,
+    "id": "EntityFrameworkMigrations",
+    "name": "Entity Framework Migrations",
+    "version": "0.1.15",
+    "publisher": "tobania",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Contains a set of tasks which allow you to work with Entity Framework code first migrations",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "icon.png"        
+    },
+	"content": {
+		"details": {
+			"path": "overview.md"
+		}
+	},
+    "files": [
+      { "path": "GenerateEntityFrameworkMigrationScript"},
+      { "path": "CopyEntityFrameworkMigrate" },
+      { "path": "ApplyEntityFrameworkMigrationsWithMigrate" }
+    ],
+    "contributions": [
+      {
+        "id": "GenerateEntityFrameworkMigrationScript",
+        "type": "ms.vss-distributed-task.task",
+        "targets": [
+          "ms.vss-distributed-task.tasks"
+        ],
+        "properties": {
+          "name": "GenerateEntityFrameworkMigrationScript"
+        }
+      },
+      {
+        "id": "CopyEntityFrameworkMigrate",
+        "type": "ms.vss-distributed-task.task",
+        "targets": [
+          "ms.vss-distributed-task.tasks"
+        ],
+        "properties": {
+          "name": "CopyEntityFrameworkMigrate"
+        }
+      },
+      {
+        "id": "ApplyEntityFrameworkMigrationsWithMigrate",
+        "type": "ms.vss-distributed-task.task",
+        "targets": [
+          "ms.vss-distributed-task.tasks"
+        ],
+        "properties": {
+          "name": "ApplyEntityFrameworkMigrationsWithMigrate"
+        }
+      }
+    ]
+}
