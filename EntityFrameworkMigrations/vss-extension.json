@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "EntityFrameworkMigrations",
     "name": "Entity Framework Migrations",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "tobania",
     "targets": [
         {
